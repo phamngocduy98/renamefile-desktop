@@ -1,0 +1,16 @@
+E:\windows\Swipe\Swipe\bin\Release\Rename Tool (WPF) - Pham Ngoc Duy.exe.config
+E:\windows\Swipe\Swipe\bin\Release\Rename Tool (WPF) - Pham Ngoc Duy.exe
+E:\windows\Swipe\Swipe\bin\Release\Rename Tool (WPF) - Pham Ngoc Duy.pdb
+E:\windows\Swipe\Swipe\obj\Release\Simple Styles.baml
+E:\windows\Swipe\Swipe\obj\Release\MainWindow.g.cs
+E:\windows\Swipe\Swipe\obj\Release\App.g.cs
+E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy_MarkupCompile.cache
+E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy_MarkupCompile.lref
+E:\windows\Swipe\Swipe\obj\Release\App.baml
+E:\windows\Swipe\Swipe\obj\Release\MainWindow.baml
+E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy.g.resources
+E:\windows\Swipe\Swipe\obj\Release\BauTroiXa.Properties.Resources.resources
+E:\windows\Swipe\Swipe\obj\Release\Swipe.csproj.GenerateResource.cache
+E:\windows\Swipe\Swipe\obj\Release\Swipe.csproj.CoreCompileInputs.cache
+E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy.exe
+E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy.pdb

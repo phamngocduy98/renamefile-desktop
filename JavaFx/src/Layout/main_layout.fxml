@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Trang chủ">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <BorderPane BorderPane.alignment="CENTER">
+                           <right>
+                              <Button fx:id="btnBrowse" mnemonicParsing="false" text="Duyệt" BorderPane.alignment="CENTER" />
+                           </right>
+                           <center>
+                              <TextField fx:id="inputFolderPath" promptText="Chọn đường dẫn" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="5.0" />
+                                 </BorderPane.margin></TextField>
+                           </center>
+                           <bottom>
+                              <Button fx:id="btnStart" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Bắt đầu" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </BorderPane.margin></Button>
+                           </bottom>
+                        </BorderPane>
+                     </top>
+                     <center>
+                        <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin></ListView>
+                     </center>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </BorderPane>
+               </content>
+            </Tab>
+          <Tab text="Cấu hình">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox fx:id="cboxRemoveVNAlphabetSign" mnemonicParsing="false" selected="true" text="Xoá dấu chữ cái tiếng việt" />
+                              <CheckBox fx:id="cboxReplaceSquareBracket" mnemonicParsing="false" selected="true" text="Đổi [] thành ()" />
+                              <CheckBox fx:id="cboxReplaceSpace" mnemonicParsing="false" selected="true" text="Đổi dấu cách thành _" />
+                              <CheckBox fx:id="cboxReplaceHyphen" mnemonicParsing="false" selected="true" text="Đổi dấu - thành _" />
+                              <CheckBox fx:id="cboxReplaceQuotation" mnemonicParsing="false" selected="true" text="Đổi ' thành _" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="5.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </top>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <bottom>
+                        <Button fx:id="btnAddRule" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Thêm luật" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <center>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <content>
+                              <VBox fx:id="vboxRuleList" prefHeight="200.0" spacing="5.0" />
+                           </content>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

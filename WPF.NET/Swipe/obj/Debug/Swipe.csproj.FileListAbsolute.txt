@@ -1,0 +1,17 @@
+E:\windows\Swipe\Swipe\bin\Debug\Rename Tool (WPF) - Pham Ngoc Duy.exe.config
+E:\windows\Swipe\Swipe\bin\Debug\Rename Tool (WPF) - Pham Ngoc Duy.exe
+E:\windows\Swipe\Swipe\bin\Debug\Rename Tool (WPF) - Pham Ngoc Duy.pdb
+E:\windows\Swipe\Swipe\obj\Debug\Simple Styles.baml
+E:\windows\Swipe\Swipe\obj\Debug\MainWindow.g.cs
+E:\windows\Swipe\Swipe\obj\Debug\App.g.cs
+E:\windows\Swipe\Swipe\obj\Debug\Rename Tool (WPF) - Pham Ngoc Duy_MarkupCompile.cache
+E:\windows\Swipe\Swipe\obj\Debug\Rename Tool (WPF) - Pham Ngoc Duy_MarkupCompile.lref
+E:\windows\Swipe\Swipe\obj\Debug\App.baml
+E:\windows\Swipe\Swipe\obj\Debug\MainWindow.baml
+E:\windows\Swipe\Swipe\obj\Debug\Rename Tool (WPF) - Pham Ngoc Duy.g.resources
+E:\windows\Swipe\Swipe\obj\Debug\BauTroiXa.Properties.Resources.resources
+E:\windows\Swipe\Swipe\obj\Debug\Swipe.csproj.GenerateResource.cache
+E:\windows\Swipe\Swipe\obj\Debug\Swipe.csproj.CoreCompileInputs.cache
+E:\windows\Swipe\Swipe\obj\Debug\Rename Tool (WPF) - Pham Ngoc Duy.exe
+E:\windows\Swipe\Swipe\obj\Debug\Rename Tool (WPF) - Pham Ngoc Duy.pdb
+E:\windows\Swipe\Swipe\obj\Debug\Swipe.csprojAssemblyReference.cache

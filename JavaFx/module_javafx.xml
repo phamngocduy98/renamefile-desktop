@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_javafx" default="compile.module.javafx">
+  <dirname property="module.javafx.basedir" file="${ant.file.module_javafx}"/>
+  
+  <property name="module.jdk.home.javafx" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.javafx" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.javafx" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.javafx" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="javafx.output.dir" value="${module.javafx.basedir}/out/production/JavaFx"/>
+  <property name="javafx.testoutput.dir" value="${module.javafx.basedir}/out/test/JavaFx"/>
+  
+  <path id="javafx.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="javafx.module.production.classpath">
+    <path refid="${module.jdk.classpath.javafx}"/>
+    <path refid="library.jmetro-5.5.classpath"/>
+  </path>
+  
+  <path id="javafx.runtime.production.module.classpath">
+    <pathelement location="${javafx.output.dir}"/>
+    <path refid="library.jmetro-5.5.classpath"/>
+  </path>
+  
+  <path id="javafx.module.classpath">
+    <path refid="${module.jdk.classpath.javafx}"/>
+    <pathelement location="${javafx.output.dir}"/>
+    <path refid="library.jmetro-5.5.classpath"/>
+  </path>
+  
+  <path id="javafx.runtime.module.classpath">
+    <pathelement location="${javafx.testoutput.dir}"/>
+    <pathelement location="${javafx.output.dir}"/>
+    <path refid="library.jmetro-5.5.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.javafx">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.javafx">
+    <patternset refid="excluded.from.module.javafx"/>
+  </patternset>
+  
+  <path id="javafx.module.sourcepath">
+    <dirset dir="${module.javafx.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.javafx" depends="compile.module.javafx.production,compile.module.javafx.tests" description="Compile module JavaFx"/>
+  
+  <target name="compile.module.javafx.production" depends="register.custom.compilers" description="Compile module JavaFx; production classes">
+    <mkdir dir="${javafx.output.dir}"/>
+    <javac2 destdir="${javafx.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.javafx}/javac">
+      <compilerarg line="${compiler.args.javafx}"/>
+      <bootclasspath refid="javafx.module.bootclasspath"/>
+      <classpath refid="javafx.module.production.classpath"/>
+      <src refid="javafx.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.javafx"/>
+    </javac2>
+    
+    <copy todir="${javafx.output.dir}">
+      <fileset dir="${module.javafx.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.javafx.tests" depends="register.custom.compilers,compile.module.javafx.production" description="compile module JavaFx; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.javafx" description="cleanup module">
+    <delete dir="${javafx.output.dir}"/>
+    <delete dir="${javafx.testoutput.dir}"/>
+  </target>
+</project>

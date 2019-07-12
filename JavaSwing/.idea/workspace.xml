@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="swipe:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f23640de-f4e8-46a7-b0af-99a046764042" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3111">
+              <caret line="293" column="51" selection-start-line="293" selection-start-column="51" selection-end-line="293" selection-end-column="51" />
+              <folding>
+                <element signature="method#tab2#0;class#MainApp#0" />
+                <element signature="method#menuBar#0;class#MainApp#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rename-tool-swing.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/ListView/ListViewBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileNameItemRender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/FDScrollPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/GridPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="70" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/LinearPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDViewStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>var1</find>
+      <find>paintTabArea</find>
+      <find>var2</find>
+      <find>paintTabBorder</find>
+      <find>var6</find>
+      <find>var3</find>
+      <find>var4</find>
+      <find>tabPane</find>
+      <find>getBackgroundAt</find>
+      <find>paintTab</find>
+      <find>rects</find>
+      <find>tabInsets</find>
+      <find>paintText</find>
+      <find>selectedForeground</find>
+      <find>foreground</find>
+      <find>JComboBox.</find>
+      <find>createArrow</find>
+      <find>UIManager.getColor</find>
+      <find>setBackground</find>
+      <find>paint</find>
+      <find>font</find>
+      <find>createArrowButton</find>
+      <find>book</find>
+      <find>nameWithExtension</find>
+      <find>fileNames</find>
+      <find>getSelectedRule</find>
+      <find>removeVietnameseAlphabetSign</find>
+      <find>System.out.println</find>
+      <find>fileListView</find>
+      <find>initListView</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>textColor</replace>
+      <replace>backgroundColor</replace>
+      <replace>AppFrame</replace>
+      <replace>AppFrameBuilder</replace>
+      <replace>return getInstance();</replace>
+      <replace>avatarIcon</replace>
+      <replace>this</replace>
+      <replace>appPanel</replace>
+      <replace>component</replace>
+      <replace>dataModel</replace>
+      <replace>book.add</replace>
+      <replace>graphics</replace>
+      <replace>tabPlacement</replace>
+      <replace>font</replace>
+      <replace>metrics</replace>
+      <replace>width</replace>
+      <replace>fileName</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Screen/Screen.form" />
+        <option value="$PROJECT_DIR$/src/Screen/Screen.java" />
+        <option value="$PROJECT_DIR$/src/Screen/ss.form" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/AppLayout.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/BoxPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/LinearLayoutPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDTextField.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDSecButton.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDPriButton.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/ListViewAdapter.java" />
+        <option value="$PROJECT_DIR$/src/App/Book.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/BorderPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/ModernScrollPane.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDScrollPane.java" />
+        <option value="$PROJECT_DIR$/src/App/BookItemRender.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/ListView.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/ListItemRender.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/GridPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDTab.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDTransparentButton.java" />
+        <option value="$PROJECT_DIR$/src/App/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDLookAndFeel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDComboBox.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/LinearPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDTextInput.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/AppPanel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDButton.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/OnClickListener.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDDialog.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/BlankPanel.java" />
+        <option value="$PROJECT_DIR$/src/App/File.java" />
+        <option value="$PROJECT_DIR$/src/App/FileItemRender.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/AppFrame.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/FDTextLabel.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/ListViewBuilder.java" />
+        <option value="$PROJECT_DIR$/src/App/FileNameItemRender.java" />
+        <option value="$PROJECT_DIR$/src/App/FileName.java" />
+        <option value="$PROJECT_DIR$/src/App/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/FluentDesign/AppFrameBuilder.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/resources.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDTextLabel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileNameItemRender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDCheckbox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDViewStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/LinearPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/ListView/ListViewBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cf.bautroixa/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="230" />
+    <option name="y" value="-10" />
+    <option name="width" value="1615" />
+    <option name="height" value="880" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="swing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="241" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.1150748" />
+    <property name="settings.editor.selected.configurable" value="project.propGUI" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\swipe\src\FluentDesign" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="rename-tool-swing" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f23640de-f4e8-46a7-b0af-99a046764042" name="Default Changelist" comment="" />
+      <created>1561436447365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561436447365</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27785236" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3045326" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://D:/CommonFiles/Java/jre/lib/rt.jar!/javax/swing/plaf/basic/BasicArrowButton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/CommonFiles/Java/jre/lib/rt.jar!/javax/swing/plaf/basic/BasicComboBoxUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="436" column="8" selection-start-line="436" selection-start-column="8" selection-end-line="436" selection-end-column="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/GridPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/LinearPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/OnClickListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDDialog.java" />
+    <entry file="jar://D:/CommonFiles/Java/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/AppFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/AppPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/BlankPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDComboBox.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDTextInput.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDTextLabel.java" />
+    <entry file="file://$PROJECT_DIR$/src/App/FileNameItemRender.java" />
+    <entry file="file://$PROJECT_DIR$/src/App/FileName.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDPriButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/ListViewBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/App/FileUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/AppFrameBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/resources.properties" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/FluentDesign/FDScrollPane.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Button/FDButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Button/FDPriButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Basic/FDTextLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Basic/FDCheckbox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/StructuredView.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Basic/FDComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Basic/FDTextInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Button/OnClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/user.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/Book.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Frame/AppFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Frame/AppFrameBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Frame/FDDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Button/FDTransparentButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/BlankPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/BorderPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-515">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/ListView/ListItemRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3111">
+          <caret line="293" column="51" selection-start-line="293" selection-start-column="51" selection-end-line="293" selection-end-column="51" />
+          <folding>
+            <element signature="method#tab2#0;class#MainApp#0" />
+            <element signature="method#menuBar#0;class#MainApp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/ListView/ListViewBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileNameItemRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/FDScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/GridPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/Panel/LinearPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/FluentDesign/FDViewStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cf.bautroixa/App/FileName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rename-tool-swing.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>swipe:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1150748" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1150748" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>swipe</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1150748" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

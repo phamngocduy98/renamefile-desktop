@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="swipe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/swipe_jar</output-path>
+    <root id="archive" name="swipe.jar">
+      <element id="module-output" name="rename-tool-swing" />
+    </root>
+  </artifact>
+</component>
