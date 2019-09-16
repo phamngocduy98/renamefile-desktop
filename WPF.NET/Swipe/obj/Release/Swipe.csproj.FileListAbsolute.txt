@@ -14,3 +14,4 @@ E:\windows\Swipe\Swipe\obj\Release\Swipe.csproj.GenerateResource.cache
 E:\windows\Swipe\Swipe\obj\Release\Swipe.csproj.CoreCompileInputs.cache
 E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy.exe
 E:\windows\Swipe\Swipe\obj\Release\Rename Tool (WPF) - Pham Ngoc Duy.pdb
+E:\windows\Swipe\Swipe\obj\Release\Swipe.csprojAssemblyReference.cache

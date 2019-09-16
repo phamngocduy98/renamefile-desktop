@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReplaceWhat>
+    <ReplaceWhatItem>duy</ReplaceWhatItem>
+    <ReplaceWhatItem>Thay thế kí tự ...</ReplaceWhatItem>
+    <ReplaceWhatItem>Thay thế kí tự ...</ReplaceWhatItem>
+  </ReplaceWhat>
+  <ReplaceBy>
+    <ReplaceByItem>2</ReplaceByItem>
+    <ReplaceByItem>... bởi kí tự</ReplaceByItem>
+    <ReplaceByItem>... bởi kí tự</ReplaceByItem>
+  </ReplaceBy>
+</Config>

@@ -15,121 +15,54 @@ namespace Swipe
     public partial class MainWindow : Window
     {
         private AppModel.DataStore data;
+        private AppModel.ConfigStore config;
         List<string> replaceWhat = new List<string>();
         List<string> replaceBy = new List<string>();
+        private string CONFIG_INPUT_FILE_NAME = "Rule.RenameTool.conf";
         public MainWindow()
         {
             data = new AppModel.DataStore();
+            config = new AppModel.ConfigStore();
             InitializeComponent();
+            loadRule();
         }
 
-        public void applyRule(bool previewOnly)
+        public void loadRule()
         {
-            replaceWhat.Clear();
-            replaceBy.Clear();
+            AppModel.ConfigStore newConfig = FileUtils.DeSerializeObject<AppModel.ConfigStore>(CONFIG_INPUT_FILE_NAME);
+            if (newConfig != null)
+            {
+                config = newConfig;
+                gridRule.Children.Clear();
+                int ruleLen = config.ReplaceWhat.Count;
+                for (int i = 0; i < ruleLen; i++)
+                {
+                    addRule(config.ReplaceWhat[i], config.ReplaceBy[i]);
+                }
+            }
+        }
+
+        public void saveRule()
+        {
+            List<string> customReplaceWhat = new List<string>();
+            List<string> customReplaceBy = new List<string>();
             int rowCount = gridRule.Children.Count / 3;
             for (int i = 0; i < rowCount; i++)
             {
                 string rpWhat = ((TextBox)gridRule.Children[3 * i]).Text;
-                replaceWhat.Add(rpWhat);
+                customReplaceWhat.Add(rpWhat);
                 string rpBy = ((TextBox)gridRule.Children[3 * i + 1]).Text;
-                replaceBy.Add(rpBy);
-                //System.Console.WriteLine("Replace " + rpWhat + " by " + rpBy);
+                customReplaceBy.Add(rpBy);
             }
-            List<FileName> files = data.getFileList();
-            foreach (FileName fileNameString in files)
-            {
-                string newName = fileNameString.OldName;
-                if (cboxRemoveVNCSign.IsChecked == true)
-                {
-                    newName = FileUtils.normalizeCharacter(newName);
-                }
-                if (cboxBracket.IsChecked == true)
-                {
-                    replaceWhat.AddRange(new List<string> { "[" ,"]" });
-                    replaceBy.AddRange(new List<string> { "(", ")" });
-                }
-                if (cboxSpace.IsChecked == true)
-                {
-                    replaceWhat.Add(" ");
-                    replaceBy.Add("_");
-                }
-                if (cboxHyphen.IsChecked == true)
-                {
-                    replaceWhat.AddRange(new List<string> { "-", "–" });
-                    replaceBy.AddRange(new List<string> { "_", "_" });
-                }
-                if (cboxQuotation.IsChecked == true)
-                {
-                    replaceWhat.AddRange(new List<string> { "'", "”", "“" });
-                    replaceBy.AddRange(new List<string> { "_", "_", "_" });
-                }
-                replaceWhat.AddRange(new List<string> { "___", "đ", "Đ" });
-                replaceBy.AddRange(new List<string> { "_", "d", "D" });
-                int len = replaceWhat.Count;
-                for (int i = 0; i < len; i++)
-                {
-                    newName = newName.Replace(replaceWhat[i], replaceBy[i]);
-                }
-                fileNameString.NewName = newName;
-                if (!previewOnly && FileUtils.rename(data.folderPath, fileNameString.OldName, newName))
-                {
-                    //System.Console.WriteLine("Rename to " + newName + ": Success");
-                }
-            }
-            //refresh listview
-            listView.Items.Refresh();
+            config.SetCustomReplaceWhat(customReplaceWhat);
+            config.SetCustomReplaceBy(customReplaceBy);
+            FileUtils.SerializeObject<ConfigStore>(config, CONFIG_INPUT_FILE_NAME);
         }
 
-        private void browse_folder(string folderPath)
+        public void addRule(string replaceWhatTxt, string replaceByTxt)
         {
-            string[] files = Directory.GetFiles(folderPath);
-            if (files.Length == 0)
-            {
-                System.Windows.Forms.MessageBox.Show("This folder is empty", "Warning");
-                return;
-            }
-            files = FileUtils.GetFileNames(files);
-            inputFolder.Text = folderPath;
-            data.SetFileList(files);
-            data.folderPath = folderPath;
-            listView.ItemsSource = data.getFileList();
-            listView.Items.Refresh();
-            //System.Console.WriteLine(data.getFileList().Count);
-        }
-
-        private void BtnBrowse_Click(object sender, RoutedEventArgs e)
-        {
-            var fbd = new System.Windows.Forms.FolderBrowserDialog();
-
-            System.Windows.Forms.DialogResult result = fbd.ShowDialog();
-            string folderPath = fbd.SelectedPath;
-            if (result.ToString() == "OK" && !string.IsNullOrWhiteSpace(folderPath))
-            {
-                browse_folder(folderPath);
-            }
-            //else
-            //{
-            //    System.Windows.Forms.MessageBox.Show("No folder selected", "Warning");
-            //}
-        }
-
-        private void BtnPreview_Click(object sender, RoutedEventArgs e)
-        {
-            browse_folder(data.folderPath);
-            applyRule(true);
-        }
-
-        private void BtnStart_Click(object sender, RoutedEventArgs e)
-        {
-            browse_folder(data.folderPath);
-            applyRule(false);
-        }
-
-        private void BtnAddRule_Click(object sender, RoutedEventArgs e)
-        {
-            TextBox txtReplaceWhat = new TextBox() { Text = "Thay thế kí tự..." };
-            TextBox txtReplaceBy = new TextBox() { Text = "...bởi kí tự"  };
+            TextBox txtReplaceWhat = new TextBox() { Text = replaceWhatTxt };
+            TextBox txtReplaceBy = new TextBox() { Text = replaceByTxt };
             Button btnRemoveRule = new Button() { Content = "Xóa" };
             btnRemoveRule.Click += BtnRemoveRule_Click;
 
@@ -150,6 +83,148 @@ namespace Swipe
             Grid.SetRow(btnRemoveRule, row);
         }
 
+        public void applyRule(bool previewOnly)
+        {
+            saveRule();
+            replaceWhat.Clear();
+            replaceBy.Clear();
+            int rowCount = gridRule.Children.Count / 3;
+            for (int i = 0; i < rowCount; i++)
+            {
+                string rpWhat = ((TextBox)gridRule.Children[3 * i]).Text;
+                replaceWhat.Add(rpWhat);
+                string rpBy = ((TextBox)gridRule.Children[3 * i + 1]).Text;
+                replaceBy.Add(rpBy);
+                //System.Console.WriteLine("Replace " + rpWhat + " by " + rpBy);
+            }
+            List<FileName> files = data.getFileList();
+            foreach (FileName fileNameString in files)
+            {
+                string newName = fileNameString.OldName;
+                if (cboxRemoveVNCSign.IsChecked == true)
+                {
+                    newName = FileUtils.normalizeCharacter(newName);
+                    replaceWhat.AddRange(new List<string> { "đ", "Đ" });
+                    replaceBy.AddRange(new List<string> { "d", "D" });
+                }
+                if (cboxBracket.IsChecked == true)
+                {
+                    replaceWhat.AddRange(new List<string> { "[", "]" });
+                    replaceBy.AddRange(new List<string> { "(", ")" });
+                }
+                if (cboxSpace.IsChecked == true)
+                {
+                    replaceWhat.Add(" ");
+                    replaceBy.Add("_");
+                }
+                if (cboxHyphen.IsChecked == true)
+                {
+                    replaceWhat.AddRange(new List<string> { "-", "–" });
+                    replaceBy.AddRange(new List<string> { "_", "_" });
+                }
+                if (cboxQuotation.IsChecked == true)
+                {
+                    replaceWhat.AddRange(new List<string> { "'", "”", "“" });
+                    replaceBy.AddRange(new List<string> { "_", "_", "_" });
+                }
+                if (cboxSpecialCharacter.IsChecked == true)
+                {
+                    replaceWhat.AddRange(new List<string> { "Ⓡ", "®", "@" });
+                    replaceBy.AddRange(new List<string> { "", "", "" });
+                }
+                int len = replaceWhat.Count;
+                for (int i = 0; i < len; i++)
+                {
+                    //System.Console.WriteLine("Rename " + newName + " by pattern" + replaceWhat[i] + " by" + replaceBy[i]);
+                    newName = newName.Replace(replaceWhat[i], replaceBy[i]);
+                    //System.Console.WriteLine("res=" + newName);
+                }
+                string finalName = newName;
+                while (cboxRemoveDuplicateSpace.IsChecked == true)
+                {
+                    newName = newName.Replace("___", "_");
+                    newName = newName.Replace("__", "_");
+                    if (newName == finalName)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        finalName = newName;
+                    }
+                }
+                if (cboxRemoveBeginSpace.IsChecked == true && newName[0] == '_')
+                {
+                    newName = newName.Remove(0, 1);
+                }
+                fileNameString.NewName = newName;
+                if (!previewOnly && FileUtils.rename(config.folderPath, fileNameString.OldName, newName))
+                {
+                    //System.Console.WriteLine("Rename to " + newName + ": Success");
+                }
+            }
+            //refresh listview
+            listView.Items.Refresh();
+            if (!previewOnly)
+            {
+                System.Windows.Forms.MessageBox.Show("Đã đổi tên thành công", "Cảnh báo nguy hiểm!!!");
+            }
+        }
+
+        private void browse_folder(string folderPath)
+        {
+            string[] files = Directory.GetFiles(folderPath);
+            if (files.Length == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Thư mục rỗng", "Cảnh báo");
+                return;
+            }
+            files = FileUtils.GetFileNames(files);
+            inputFolder.Text = folderPath;
+            data.SetFileList(files);
+            config.folderPath = folderPath;
+            listView.ItemsSource = data.getFileList();
+            listView.Items.Refresh();
+            //System.Console.WriteLine(data.getFileList().Count);
+        }
+
+        private void BtnBrowse_Click(object sender, RoutedEventArgs e)
+        {
+            var fbd = new System.Windows.Forms.FolderBrowserDialog();
+            if (config.folderPath != null && config.folderPath.Length > 0)
+            {
+                fbd.SelectedPath = config.folderPath;
+            }
+
+            System.Windows.Forms.DialogResult result = fbd.ShowDialog();
+            string folderPath = fbd.SelectedPath;
+            if (result.ToString() == "OK" && !string.IsNullOrWhiteSpace(folderPath))
+            {
+                browse_folder(folderPath);
+            }
+            //else
+            //{
+            //    System.Windows.Forms.MessageBox.Show("No folder selected", "Warning");
+            //}
+        }
+
+        private void BtnPreview_Click(object sender, RoutedEventArgs e)
+        {
+            browse_folder(config.folderPath);
+            applyRule(true);
+        }
+
+        private void BtnStart_Click(object sender, RoutedEventArgs e)
+        {
+            browse_folder(config.folderPath);
+            applyRule(false);
+        }
+
+        private void BtnAddRule_Click(object sender, RoutedEventArgs e)
+        {
+            addRule("Thay thế kí tự ...", "... bởi kí tự");
+        }
+
         private void BtnRemoveRule_Click(object sender, RoutedEventArgs e)
         {
             // each ROW contains 3 children
@@ -164,7 +239,7 @@ namespace Swipe
             int len = gridRule.Children.Count;
             for (int i = 0; i < len; i++)
             {
-                Grid.SetRow(gridRule.Children[i], i/3);
+                Grid.SetRow(gridRule.Children[i], i / 3);
             }
             int row = index / 3;
             gridRule.RowDefinitions.RemoveAt(row);

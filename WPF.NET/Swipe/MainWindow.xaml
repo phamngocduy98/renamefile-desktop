@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Swipe"
         mc:Ignorable="d"
-        Title="Rename Tool - Pham Ngoc Duy" Height="500" Width="500">
+        Title="Rename Tool v19.09.16 - Pham Ngoc Duy" Height="500" Width="500">
     <TabControl x:Name="tabControl">
         <TabItem Header="Trang chủ">
             <DockPanel>
@@ -19,19 +19,20 @@
                         </Style>
                     </Grid.Resources>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="14*"/>
+                        <ColumnDefinition Width="53*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:Name="btnBrowse" Click="BtnBrowse_Click" IsDefault="True" Content="Duyệt"  Width="75" Grid.Column="1"/>
-                    <TextBox x:Name="inputFolder" Text="Chọn một thư mục..." Grid.Column="0" Margin="5,5,0,5" />
-                    <Button x:Name="btnPreview" Click="BtnPreview_Click" Content="Xem trước" Grid.Row="1" Grid.Column="0"/>
-                    <Button x:Name="btnStart" Click="BtnStart_Click" Content="Bắt đầu" Grid.Row="1" Grid.Column="1"/>
+                    <Button x:Name="btnBrowse" Click="BtnBrowse_Click" IsDefault="True" Content="Duyệt"  Width="75" Grid.Column="2" Margin="4.6,5,5.2,4.8"/>
+                    <TextBox x:Name="inputFolder" Text="Chọn một thư mục..." Grid.Column="0" Margin="5,5,84.2,4.8" Grid.ColumnSpan="3" />
+                    <Button x:Name="btnPreview" Click="BtnPreview_Click" Content="Xem trước" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5.2,5.4,4.6"/>
+                    <Button x:Name="btnStart" Click="BtnStart_Click" Content="Đổi tên file" Grid.Row="1" Grid.Column="2" Margin="4.6,5.2,5.2,4.6"/>
                 </Grid>
-            
+
                 <ListView x:Name="listView" DockPanel.Dock="Bottom" >
                     <ListView.View>
                         <GridView>
@@ -42,11 +43,15 @@
                     </ListView.View>
                 </ListView>
             </DockPanel>
-            
+
         </TabItem>
         <TabItem Header="Cấu hình">
             <DockPanel LastChildFill="True">
                 <Grid DockPanel.Dock="Top" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
@@ -60,10 +65,13 @@
                         </Style>
                     </Grid.Resources>
                     <CheckBox x:Name="cboxRemoveVNCSign"  Content="Bỏ dấu tiếng việt"  IsChecked="True"/>
-                    <CheckBox x:Name="cboxBracket" Content="Thay [] bằng ()"  IsChecked="True" Grid.Row="1"/>
-                    <CheckBox x:Name="cboxSpace" Content="Thay space bằng _"  IsChecked="True" Grid.Row="2"/>
-                    <CheckBox x:Name="cboxHyphen" Content="Thay - bằng _" IsChecked="True" Grid.Row="3"/>
-                    <CheckBox x:Name="cboxQuotation" Content="Thay ' bằng _"  IsChecked="True" Grid.Row="4"/>
+                    <CheckBox x:Name="cboxBracket" Content="Thay [] bằng ()"  IsChecked="True" Grid.Row="0" Grid.Column="1"/>
+                    <CheckBox x:Name="cboxSpace" Content="Thay space bằng _"  IsChecked="True" Grid.Row="1" Grid.Column="0"/>
+                    <CheckBox x:Name="cboxHyphen" Content="Thay - bằng _" IsChecked="True" Grid.Row="1" Grid.Column="1"/>
+                    <CheckBox x:Name="cboxQuotation" Content="Thay ' bằng _"  IsChecked="True" Grid.Row="2" Grid.Column="0"/>
+                    <CheckBox x:Name="cboxSpecialCharacter" Content="Xóa kí hiệu @ Ⓡ"  IsChecked="True" Grid.Row="2" Grid.Column="1"/>
+                    <CheckBox x:Name="cboxRemoveDuplicateSpace" Content="Xóa các dấu __ trùng lặp"  IsChecked="True" Grid.Row="3" Grid.Column="0"/>
+                    <CheckBox x:Name="cboxRemoveBeginSpace" Content="Xóa __ ở đầu tên"  IsChecked="True" Grid.Row="3" Grid.Column="1"/>
                 </Grid>
                 <Button x:Name="btnAddRule" Click="BtnAddRule_Click" Content="Thêm luật thay thế" DockPanel.Dock="Bottom" />
                 <ScrollViewer DockPanel.Dock="Bottom">
@@ -83,10 +91,10 @@
                         </Grid.ColumnDefinitions>
                     </Grid>
                 </ScrollViewer>
-                
+
             </DockPanel>
         </TabItem>
-   
+
     </TabControl>
 
 </Window>
